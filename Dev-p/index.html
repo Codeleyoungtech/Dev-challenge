@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>devChallenges.io | Minimal Blog Card</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+
+      .card {
+        width: 350px;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        padding: 16px;
+      }
+      .card-img {
+        height: 152px;
+        border-radius: 12px;
+        background: url(Cactus.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .card-label {
+        padding: 4px 16px;
+        background-color: #f1d3ea;
+        width: fit-content;
+        border-radius: 16px;
+        margin-top: 16px;
+      }
+      .card-title {
+        margin-top: 16px;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      .card-dis {
+        padding-bottom: 20px;
+        /* border-bot
+        tom: 1px solid #333; */
+        color: #a5a5a5;
+      }
+
+      .card-author {
+        margin-top: 20px;
+        color: #a5a5a5;
+      }
+
+      @media (width<350px) {
+        .card {
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-img"><img src="" alt="" /></div>
+      <div class="card-buttom">
+        <div class="card-label">Design</div>
+        <h3 class="card-title">Embracing Design</h3>
+        <p class="card-dis">
+          From minimalist sculptures to minimalist paintings, this blog will
+          inspire you to appreciate the beauty that lies in simplicity.
+        </p>
+        <hr />
+        <div class="card-author">Annie Spratt</div>
+      </div>
+    </div>
+    <!-- <div class="author-info">
+      Coded by <a href="#">Your Name Here</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div> -->
+  </body>
+</html>
